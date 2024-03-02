@@ -3,6 +3,7 @@
 #include <iostream>
 #include <conio.h>
 #include <stdio.h>
+#include <math.h>
 struct Triangle
 {
 	double a, b, c;
@@ -10,7 +11,7 @@ struct Triangle
 	double square() const
 	{
 		double s = (a + b + c) / 2;
-		return sqrt(s * (s - a) * (s - b) * (s * c));
+		return sqrt(s * (s - a) * (s - b) * (s - c));
 	}
 
 	double perimeter() const
